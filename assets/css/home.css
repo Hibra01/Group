@@ -1,3 +1,125 @@
-*{
-    margin: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#home {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/unsplash_omeaHbEFlN4.png");
+  background-position: center center;
+  background-size: cover;
+}
+
+.edukera {
+  display: flex;
+  align-items: center;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: aqua; */
+}
+.list nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0px;
+}
+.list ul li {
+  margin-right: 20px;
+  font-size: 24px;
+  /* background-color: #000; */
+  height: 100%;
+}
+.list ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  padding: 0px !important;
+}
+.login button {
+  background-color: #ffe500;
+  border: none;
+  color: #000;
+  font-size: 24px;
+  width: 144px;
+  height: 47px;
+}
+
+.text h1 {
+  font-size: 72px;
+  width: 40%;
+}
+.text p {
+  width: 48%;
+  font-size: 24px;
+}
+.text h1 span {
+  color: #ffd600;
+}
+.text {
+  color: white;
+}
+.btns {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+}
+.btns .btn1 {
+  font-size: 30px;
+}
+.btns .btn2 {
+  font-size: 30px;
+}
+.btn1 button {
+  padding: 0.5rem 2rem;
+  border: none;
+}
+.btn2 button {
+  background-color: #ffe500;
+  padding: 0.5rem 1rem;
+  border: none;
+}
+
+.main-for-text {
+  padding-top: 420px;
+}
+
+.icon {
+  display: none;
+}
+
+@media only screen and (max-width: 990px) {
+  .list,
+  .login {
+    display: none;
+  }
+  .icon {
+    display: block;
+    font-size: 25px;
+  }
+ 
+  .text h1 {
+  font-size: 40px;
+  width: 40%;
+}
+.text p {
+  width: 48%;
+  font-size: 14px;
+}
+.btns .btn1 {
+  font-size: 17px;
+}
+.btns .btn2 {
+  font-size: 17px;
+}
 }
